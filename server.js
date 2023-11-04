@@ -44,6 +44,6 @@ app.get('/api/:rapperName', (request, response)=>{
     // get api send json with our created object
 
 
-app.listen(PORT, ()=>{
+app.listen(process.env.PORT || PORT, ()=>{
     console.log(`The server is running on ${PORT}! You beter go catch it :)!`)
 })
